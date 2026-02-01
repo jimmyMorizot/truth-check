@@ -15,17 +15,17 @@ export function ResultDisplay({ result, onReset }: ResultDisplayProps) {
   return (
     <div className="w-full max-w-4xl mx-auto space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
       {/* Carte principale avec le score */}
-      <Card className="shadow-2xl border-2 border-orange-100 dark:border-orange-900/30 bg-gradient-to-br from-white to-orange-50/30 dark:from-gray-950 dark:to-orange-950/10 overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500/10 to-amber-500/10 rounded-full blur-3xl -z-0"></div>
+      <Card className="shadow-2xl border-2 border-[hsl(var(--latte))]/20 dark:border-[hsl(var(--coffee-light))]/30 bg-gradient-to-br from-white to-[hsl(var(--cream))]/20 dark:from-[hsl(var(--espresso))] dark:to-[hsl(var(--coffee-dark))]/70 overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[hsl(var(--latte))]/10 to-[hsl(var(--cream))]/10 rounded-full blur-3xl -z-0"></div>
         <CardHeader className="relative z-10 text-center pb-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 text-orange-800 dark:text-orange-200 text-sm font-medium mb-4 mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[hsl(var(--latte))]/20 to-[hsl(var(--cream))]/20 dark:from-[hsl(var(--coffee))]/50 dark:to-[hsl(var(--coffee-light))]/40 text-[hsl(var(--coffee-dark))] dark:text-[hsl(var(--cream))] text-sm font-medium mb-4 mx-auto">
             <TrendingUp className="w-4 h-4" />
             Analyse terminée
           </div>
-          <CardTitle className="text-2xl bg-gradient-to-r from-orange-600 to-amber-600 dark:from-orange-400 dark:to-amber-400 bg-clip-text text-transparent">
+          <CardTitle className="text-2xl bg-gradient-to-r from-[hsl(var(--coffee))] to-[hsl(var(--coffee-light))] dark:from-[hsl(var(--cream))] dark:to-[hsl(var(--latte))] bg-clip-text text-transparent">
             Résultat de l'analyse
           </CardTitle>
-          <CardDescription className="text-base mt-2 font-medium">
+          <CardDescription className="text-base mt-2 font-medium dark:text-[hsl(var(--latte))]/80">
             {result.summary}
           </CardDescription>
         </CardHeader>
@@ -98,15 +98,15 @@ export function ResultDisplay({ result, onReset }: ResultDisplayProps) {
       </div>
 
       {/* Disclaimer */}
-      <Card className="border-amber-200 dark:border-amber-900/50 bg-gradient-to-br from-amber-50/50 to-yellow-50/50 dark:from-amber-950/10 dark:to-yellow-950/10">
+      <Card className="border-[hsl(var(--latte))]/40 dark:border-[hsl(var(--coffee-light))]/50 bg-gradient-to-br from-[hsl(var(--cream))]/30 to-[hsl(var(--latte))]/20 dark:from-[hsl(var(--coffee))]/30 dark:to-[hsl(var(--coffee-light))]/20">
         <CardContent className="pt-6">
           <div className="flex items-start gap-3">
-            <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+            <AlertTriangle className="w-5 h-5 text-[hsl(var(--coffee))] dark:text-[hsl(var(--latte))] flex-shrink-0 mt-0.5" />
             <div className="space-y-1">
-              <p className="text-sm font-medium text-amber-900 dark:text-amber-200">
+              <p className="text-sm font-medium text-[hsl(var(--coffee-dark))] dark:text-[hsl(var(--cream))]">
                 Note importante
               </p>
-              <p className="text-xs text-amber-800/80 dark:text-amber-300/70 leading-relaxed">
+              <p className="text-xs text-[hsl(var(--coffee))] dark:text-[hsl(var(--latte))]/80 leading-relaxed">
                 Cette analyse est automatique et indicative. Elle ne remplace pas une vérification factuelle approfondie par des experts. Utilisez ce score comme un premier indicateur, puis vérifiez les sources et faits par vous-même.
               </p>
             </div>
@@ -119,7 +119,7 @@ export function ResultDisplay({ result, onReset }: ResultDisplayProps) {
         <Button
           onClick={onReset}
           size="lg"
-          className="gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+          className="gap-2 bg-gradient-to-r from-[hsl(var(--coffee))] to-[hsl(var(--coffee-light))] hover:from-[hsl(var(--coffee-dark))] hover:to-[hsl(var(--coffee))] dark:from-[hsl(var(--latte))] dark:to-[hsl(var(--cream))] dark:hover:from-[hsl(var(--cream))] dark:hover:to-[hsl(var(--latte))] text-white dark:text-[hsl(var(--espresso))] shadow-lg hover:shadow-xl transition-all duration-300"
         >
           <RotateCcw className="h-5 w-5" />
           Nouvelle analyse

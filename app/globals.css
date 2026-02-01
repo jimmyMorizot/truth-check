@@ -29,28 +29,44 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+
+    /* Caffeine theme colors */
+    --coffee-dark: 25 20% 25%;
+    --coffee: 30 15% 35%;
+    --coffee-light: 35 20% 45%;
+    --espresso: 20 25% 20%;
+    --latte: 40 30% 70%;
+    --cream: 45 40% 85%;
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-    --primary: 60 9.1% 97.8%;
-    --primary-foreground: 24 9.8% 10%;
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 24 5.7% 82.9%;
+    --background: 20 14.3% 8%;
+    --foreground: 40 15% 92%;
+    --card: 25 12% 12%;
+    --card-foreground: 40 15% 92%;
+    --popover: 25 12% 12%;
+    --popover-foreground: 40 15% 92%;
+    --primary: 40 30% 75%;
+    --primary-foreground: 20 15% 15%;
+    --secondary: 30 15% 25%;
+    --secondary-foreground: 40 30% 90%;
+    --muted: 30 12% 20%;
+    --muted-foreground: 40 10% 65%;
+    --accent: 35 25% 35%;
+    --accent-foreground: 40 30% 90%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 10% 25%;
+    --input: 30 10% 25%;
+    --ring: 40 30% 70%;
+
+    /* Caffeine dark theme colors */
+    --coffee-dark: 20 15% 15%;
+    --coffee: 25 12% 25%;
+    --coffee-light: 30 15% 35%;
+    --espresso: 15 20% 10%;
+    --latte: 40 20% 60%;
+    --cream: 45 25% 75%;
   }
 }
 
