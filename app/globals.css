@@ -37,6 +37,13 @@
     --espresso: 20 25% 20%;
     --latte: 40 30% 70%;
     --cream: 45 40% 85%;
+
+    /* Caffeine warm accents */
+    --amber: 32 80% 50%;
+    --amber-light: 36 85% 60%;
+    --amber-glow: 28 90% 55%;
+    --caramel: 25 70% 42%;
+    --toffee: 20 60% 35%;
   }
 
   .dark {
@@ -67,6 +74,13 @@
     --espresso: 15 20% 10%;
     --latte: 40 20% 60%;
     --cream: 45 25% 75%;
+
+    /* Caffeine warm accents (dark) */
+    --amber: 32 85% 55%;
+    --amber-light: 36 90% 65%;
+    --amber-glow: 28 95% 60%;
+    --caramel: 25 75% 48%;
+    --toffee: 20 65% 40%;
   }
 }
 

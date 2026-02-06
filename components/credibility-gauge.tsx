@@ -27,7 +27,7 @@ export function CredibilityGauge({ score, label }: CredibilityGaugeProps) {
 
   const getProgressColor = (score: number) => {
     if (score < 40) return "bg-destructive"
-    if (score < 70) return "bg-[hsl(var(--latte))]"
+    if (score < 70) return "bg-[hsl(var(--amber))]"
     return "bg-green-500"
   }
 

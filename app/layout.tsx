@@ -26,11 +26,11 @@ export default function RootLayout({
             <div className="container mx-auto px-4 py-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[hsl(var(--coffee))] to-[hsl(var(--coffee-light))] dark:from-[hsl(var(--latte))] dark:to-[hsl(var(--cream))] flex items-center justify-center shadow-lg">
-                    <ShieldCheck className="w-6 h-6 text-white dark:text-[hsl(var(--espresso))]" />
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[hsl(var(--amber))] to-[hsl(var(--caramel))] flex items-center justify-center shadow-lg shadow-[hsl(var(--amber))]/20">
+                    <ShieldCheck className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-[hsl(var(--coffee))] to-[hsl(var(--coffee-light))] dark:from-[hsl(var(--cream))] dark:to-[hsl(var(--latte))] bg-clip-text text-transparent">
+                    <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-[hsl(var(--cream))] via-[hsl(var(--amber-light))] to-[hsl(var(--latte))] bg-clip-text text-transparent">
                       TruthCheck
                     </h1>
                     <p className="text-xs text-muted-foreground dark:text-[hsl(var(--latte))]/70">
@@ -42,7 +42,7 @@ export default function RootLayout({
                   href="https://github.com/jimmyMorizot/truth-check"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl border border-[hsl(var(--latte))]/30 dark:border-[hsl(var(--coffee-light))]/40 hover:bg-[hsl(var(--cream))]/10 dark:hover:bg-[hsl(var(--coffee))]/50 transition-all dark:text-[hsl(var(--latte))]"
+                  className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl border border-[hsl(var(--amber))]/30 dark:border-[hsl(var(--amber))]/40 hover:bg-[hsl(var(--amber))]/10 dark:hover:bg-[hsl(var(--amber))]/15 hover:border-[hsl(var(--amber))]/50 transition-all dark:text-[hsl(var(--latte))]"
                 >
                   <Github className="w-4 h-4" />
                   <span className="text-sm font-medium">GitHub</span>
@@ -53,12 +53,12 @@ export default function RootLayout({
           <main className="container mx-auto px-4 py-8">
             {children}
           </main>
-          <footer className="border-t border-[hsl(var(--latte))]/20 dark:border-[hsl(var(--coffee-light))]/30 mt-auto bg-gradient-to-br from-[hsl(var(--cream))]/30 to-[hsl(var(--latte))]/20 dark:from-[hsl(var(--coffee-dark))]/50 dark:to-[hsl(var(--coffee))]/30">
+          <footer className="border-t border-[hsl(var(--amber))]/15 dark:border-[hsl(var(--amber))]/20 mt-auto bg-gradient-to-br from-[hsl(var(--cream))]/30 to-[hsl(var(--latte))]/20 dark:from-[hsl(var(--coffee-dark))]/50 dark:to-[hsl(var(--coffee))]/30">
             <div className="container mx-auto px-4 py-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
                 <div>
-                  <h3 className="font-semibold mb-3 flex items-center gap-2 justify-center md:justify-start">
-                    <ShieldCheck className="w-5 h-5 text-[hsl(var(--coffee))] dark:text-[hsl(var(--latte))]" />
+                  <h3 className="font-semibold mb-3 flex items-center gap-2 justify-center">
+                    <ShieldCheck className="w-5 h-5 text-[hsl(var(--amber))] dark:text-[hsl(var(--amber-light))]" />
                     TruthCheck
                   </h3>
                   <p className="text-sm text-muted-foreground dark:text-[hsl(var(--latte))]/80">
@@ -91,7 +91,7 @@ export default function RootLayout({
                     href="https://github.com/jimmyMorizot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-medium hover:text-[hsl(var(--coffee))] dark:hover:text-[hsl(var(--cream))] transition-colors"
+                    className="font-medium text-[hsl(var(--amber))] dark:text-[hsl(var(--amber-light))] hover:text-[hsl(var(--amber-glow))] dark:hover:text-[hsl(var(--amber))] transition-colors"
                   >
                     Jimmy Morizot
                   </a>

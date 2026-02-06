@@ -1,4 +1,5 @@
-import { openai } from './openai-client'
+import OpenAI from 'openai'
+import { openai as defaultClient } from './openai-client'
 import { FAKE_NEWS_DETECTION_SYSTEM_PROMPT, buildAnalysisPrompt } from './prompts'
 import { z } from 'zod'
 
@@ -12,8 +13,10 @@ const analysisResultSchema = z.object({
 
 export type AnalysisResult = z.infer<typeof analysisResultSchema>
 
-export async function analyzeArticle(articleText: string): Promise<AnalysisResult> {
-  const completion = await openai.chat.completions.create({
+export async function analyzeArticle(articleText: string, apiKey?: string): Promise<AnalysisResult> {
+  const client = apiKey ? new OpenAI({ apiKey }) : defaultClient
+
+  const completion = await client.chat.completions.create({
     model: 'gpt-4-turbo',
     messages: [
       { role: 'system', content: FAKE_NEWS_DETECTION_SYSTEM_PROMPT },
